@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components'
+import AboutMePage from './pages/AboutMePage';
+import HireMeMiniPage from './pages/HireMeMiniPage';
+import MainPage from "./pages/MainPage";
+
+const StyledMainApp = styled.div`
+  display: flex;
+  flex-direction: column;
+`
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <StyledMainApp>
+      <MainPage />
+      <AboutMePage />
+      <HireMeMiniPage />
+    </StyledMainApp>
   );
 }
 
